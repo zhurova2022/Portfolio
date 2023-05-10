@@ -1,0 +1,45 @@
+footer{
+  margin-top: 140px;
+  border-top: 4px solid $darkGreen;
+  .footer{
+    @extend %flex;
+    @extend %BetweenContent;
+    @extend %AlignCenter;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    &-year{
+      p{
+        font-size: 24px;
+        font-weight: bold;
+        color: $darkGreen;
+      }
+    }
+    &-github{
+      width: 100%;
+      text-align: center;
+      a{
+        font-weight: bold;
+        font-size: 24px;
+        color: $darkGreen;        
+        &:hover{
+          color: $Green;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  footer{
+   .footer{
+    flex-direction: column;
+    align-items: center;
+    &-year{
+      margin-top: 20px;
+    }
+    &-github{
+      margin-top: 20px;
+    }
+   }
+  }
+}

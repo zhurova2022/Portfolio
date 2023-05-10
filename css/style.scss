@@ -1,0 +1,152 @@
+@import "flex";
+@import "colors";
+@import "text";
+*{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: "Roboto";
+  background: $white;
+  overflow-x: hidden;
+  cursor: default;
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+  a:active,
+  a:focus,
+  li:active,
+  li:focus,
+  input:active,
+  input:focus,
+  textarea:active,
+  textarea:focus,
+  button:active,
+  button:focus,
+  a:hover,
+  h1:hover,
+  h2:hover,
+  h3:hover,
+  h4:hover {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+  ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
+.container{
+  display: block;
+  padding: 0px 15px;
+  margin: 0 auto;
+  max-width: 1915px;
+  width: 100%;
+}
+.middle{
+  display: block;
+  max-width: 1496px;
+  width: 100%;
+  margin: 0 auto;
+}
+main{
+  padding-top: 82px;
+}
+//scrollbar
+::-webkit-scrollbar {
+  width: .45em;
+}
+::-webkit-scrollbar-track {
+  background-color: $platinum;
+}
+::-webkit-scrollbar-thumb {
+  background: $dustyGrey;
+  border-radius: 5px;
+  box-shadow: inset 0.05em 0.05em 0 $blackAmber, inset 0 -0.05em 0 $darkBlack;
+}
+
+
+.code{
+  padding-left: 15px;
+  padding-right: 15px;
+  p{
+    font-size: 20px;
+    font-weight: bold;
+    color: $darkGreen;
+    max-width: 1100px;
+    width: 100%;
+  }
+  .about{
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 414px){
+  pre{
+    code{
+      font-size: 12px;
+    }
+   
+  }
+}
+
+@import "fonts";
+@import "logo";
+@import "social";
+@import "header";
+@import "profile";
+@import "skills";
+@import "projects";
+@import "swiper";
+@import "experience";
+@import "education";
+@import "footer";
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: rgba(189, 156, 156, 0.25);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.switch{
+  display: flex;
+  font-size: 12px;
+  text-indent: 2px;
+  align-items: center;
+}
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius:50%;
+  background-color: white;
+  top: 1px;
+  left: 1px;
+  transition: all 0.3s;
+}
+
+.checkbox:checked + .switch::after {
+  left : 20px;
+}
+.checkbox:checked + .switch {
+  background-color: #ffa20d;
+}
+.checkbox {
+  display : none;
+}

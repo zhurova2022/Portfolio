@@ -1,0 +1,24 @@
+%flex{
+  display: flex;
+}
+%BetweenContent{
+  justify-content: space-between;
+}
+%CenterContent{
+  justify-content: center;
+}
+%AroundContent{
+  justify-content: space-around;
+}
+%AlignCenter{
+  align-items: center;
+}
+%Row{
+  flex-direction: row;
+}
+%Column{
+  flex-direction: column;
+}
+%Wrap{
+  flex-wrap: wrap;
+}

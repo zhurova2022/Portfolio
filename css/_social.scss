@@ -1,0 +1,134 @@
+.social{
+  max-width: 260px;
+  width: 100%;
+  ul{
+    @extend %flex;
+    @extend %BetweenContent;
+    li{
+      a{
+        .social-item{
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          text-align: center;
+          line-height: 45px;
+          font-size: 24px;
+          border: 1px solid $darkGreen;
+          &:hover {
+            cursor: pointer;
+          }
+          i{
+            font-size: 26px;
+            color:$darkGreen;
+          }
+        }
+      }
+      &:hover{
+        .social-item{
+          border: 1px solid $Green;
+          i{
+            color: $Green;
+          }
+        }
+      }
+    }
+    
+  }
+}
+header{
+  .header{
+    .menu{
+      nav{
+        ul{
+          .social{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1160px) {
+  .social{
+    max-width: 200px;
+    ul{
+      li{
+        a{
+          .social-item{
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 22px;
+            i{
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .social{
+    display: none;
+  }
+  header{
+    .header{
+      .menu{
+        nav{
+          ul{
+            .social{
+              display: block;
+              margin-left: -5px;
+              margin-top: 50px;
+              ul{
+                display: flex;
+                flex-direction: row;
+                li{
+                  a{
+                    .social-item{
+                      border: 1px solid $white;
+                      i{
+                        color: $white;
+                      }
+                    }
+                  }
+                  &:hover{
+                    .social-item{
+                      border: 1px solid $lightGreen;
+                      i{
+                        color: $lightGreen;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 290px) {
+  header{
+    .header{
+      .menu{
+        nav{
+          ul{
+            .social{
+              max-width: 100%;
+              ul{
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

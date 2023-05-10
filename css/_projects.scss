@@ -1,0 +1,22 @@
+.projects{
+  h2{
+    margin-top: -50px;
+  }
+  .swiper-slide{
+    a{
+      display: block;
+      filter: drop-shadow(0px 4px 4px $blackAmber);
+      :hover{
+        transition: 0.5s;
+        filter: drop-shadow(2px 4px 2px $oliveGreen);
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px){
+  .projects{
+    h2{
+      margin-top: -30px;
+    }
+  }
+}
