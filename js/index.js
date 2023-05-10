@@ -218,6 +218,7 @@ window.addEventListener('beforeunload', setLocalStorage);
 function getLocalStorage() {
   if (localStorage.getItem('lang')) {
     lang = localStorage.getItem('lang');
+
     if (lang === 'ru') {
       buttonRu.classList.add('active');
       buttonEn.classList.remove('active');
@@ -226,6 +227,7 @@ function getLocalStorage() {
       buttonRu.classList.remove('active');
       buttonEn.classList.add('active');
     }
+    
     SettingTranscription();
   }
 }
