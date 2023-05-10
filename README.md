@@ -1,1 +1,1 @@
-https://zhurova2022.github.io/portfolio/
+https://zhurova2022.github.io/Portfolio/
