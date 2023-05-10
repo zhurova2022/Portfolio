@@ -101,8 +101,12 @@
   .profile{
     &-desc{
       .desc{
+        text-align: center;
         p{
           font-size: 20px;
+        }
+        span{
+          font-size: 24px;          
         }
       }
     }

@@ -623,8 +623,14 @@ header .header .menu nav ul li a:hover {
   }
 }
 @media screen and (max-width: 630px) {
+  .profile-desc .desc {
+    text-align: center;
+  }
   .profile-desc .desc p {
     font-size: 20px;
+  }
+  .profile-desc .desc span {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 506px) {
