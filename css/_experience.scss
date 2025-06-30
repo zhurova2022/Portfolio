@@ -1,0 +1,67 @@
+.experience{
+  &-item{
+    @extend %flex;
+    @extend %AroundContent;
+    .desc{
+      max-width: 632px;
+      width: 100%;
+      h3{
+        margin-bottom: 20px;
+        a{
+          color: $darkGreen;
+          &:hover{
+            color: $Green;
+          }
+        }
+      }
+      p{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: $darkGreen;
+      }
+      ul{
+        li{
+          font-size: 20px;
+          padding: 5px;
+          color: $darkGreen;
+          &:before{
+            content:  "\2013";
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .left{
+      margin-left: 15px;
+    }
+    .right{
+      margin-right: 15px;
+    }
+    .img{
+      img{
+        max-width: 530px;
+        width: 100%;
+      }
+    }
+  }
+  .bottom{
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .experience{
+    &-item{
+      flex-direction: column;
+      .desc{
+        order: 1;
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+      .img{
+        order: 2;
+        margin: 0 auto;
+      }
+    }
+  }
+}

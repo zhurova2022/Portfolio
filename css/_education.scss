@@ -1,0 +1,55 @@
+.education{
+  &-items{
+    @extend %flex;
+    @extend %AroundContent;
+    @extend %Wrap;
+  }
+  &-item{
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    .img{
+      display: inline-block;
+      overflow: hidden;
+      img{
+        display: block;
+        width: 100%;
+        transition: 1s;        
+      }
+      &:hover{
+        img{
+          transform: scale(1.2);
+        }
+      }
+    }
+    .vertical{
+      max-width: 200px;
+    }
+    .desc{
+      h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: $darkGreen;
+      }
+      p{
+        color: $darkGreen;
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+  .education{
+    padding-right: 15px;
+    padding-left: 15px;
+    &-items{
+      flex-direction: column;
+      align-items: center;
+    }
+    &-item{
+      margin-top: 40px;
+    }
+  }
+}

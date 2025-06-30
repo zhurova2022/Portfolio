@@ -1,0 +1,98 @@
+.skills{
+  h2{
+    margin-bottom: -50px;
+  }
+  &-items{
+    ul{
+      @extend %flex;
+      @extend %BetweenContent;
+      @extend %Wrap;
+      @extend %Row;
+      li{
+        padding: 50px 60px;
+        @extend %flex;
+        @extend %AlignCenter;
+        @extend %Column;
+        width: 100%;
+        max-width: 250px;        
+        p{
+          margin-top: 20px;
+          text-align: center;
+          letter-spacing: 0.015em;
+          font-size: 24px;
+          font-weight: bold;
+          color: $darkGreen;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1380px){
+  .skills{
+    &-items{
+      ul{
+        justify-content: space-around;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px){
+  .skills{
+    &-items{
+      ul{
+        li{
+          padding: 30px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 630px){
+  .skills{
+    h2{
+      margin-bottom: -30px;
+    }
+    &-items{
+      ul{
+        li{
+          p{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 506px){
+  .skills{
+    &-items{
+      ul{
+        li{
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 422px){
+  .skills{
+    &-items{
+      ul{
+        li{
+          max-width: 110px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px){
+  .skills{
+    &-items{
+      ul{
+        li{
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}
